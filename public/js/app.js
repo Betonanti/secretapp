@@ -47901,7 +47901,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             global.message = [];
             this.check();
 
-            axios.post('/api/secret', {
+            axios.post('/secret', {
                 secret: this.secret,
                 expireAfter: this.expireAfter,
                 expireAfterViews: this.expireAfterViews
@@ -48210,7 +48210,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             global.message = [];
             this.check();
 
-            axios.get('/api/secret/' + this.hash).then(function (response) {
+            axios.get('/secret/' + this.hash).then(function (response) {
                 global.secret = response.data.secret;
                 _this.clear();
             }).catch(function (error) {

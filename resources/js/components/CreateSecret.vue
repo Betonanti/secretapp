@@ -46,7 +46,7 @@
                 global.message = [];
                 this.check();
 
-                axios.post('/api/secret',{
+                axios.post('/secret',{
                     secret:this.secret,
                     expireAfter: this.expireAfter,
                     expireAfterViews:this.expireAfterViews

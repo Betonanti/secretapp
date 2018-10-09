@@ -31,7 +31,7 @@
                 global.message = [];
                 this.check();
 
-                axios.get('/api/secret/'+this.hash
+                axios.get('/secret/'+this.hash
                 ).then(response => {
                     global.secret = response.data.secret;
                     this.clear();
